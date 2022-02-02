@@ -20,8 +20,8 @@ public class ScientistAdapter extends BaseAdapter {
     public ScientistAdapter(Context context) {
         this.context = context;
     }
-    
-    public void addScientists(ArrayList<Scientist> scientists){
+
+    public void addScientists(ArrayList<Scientist> scientists) {
         this.scientists.clear();
         this.scientists.addAll(scientists);
         notifyDataSetChanged();
@@ -47,6 +47,7 @@ public class ScientistAdapter extends BaseAdapter {
         ItemScientistBinding binding = ItemScientistBinding
                 .inflate(LayoutInflater.from(context), viewGroup, false);
         Scientist scientist = scientists.get(i);
+
         Glide.with(context).load(scientist.getImage()).into(binding.scientistImage);
         binding.scientistName.setText(scientist.getName());
         binding.scientistDescription.setText(scientist.getDescription());
@@ -58,6 +59,11 @@ public class ScientistAdapter extends BaseAdapter {
 
             context.startActivity(intent);
         });
+
+        // TODO: 02/02/22 Add the zoom-to-fullscreen algorithm in the next release.
+//        binding.scientistImage.setOnClickListener(v -> {
+//
+//        });
 
         return binding.getRoot();
     }

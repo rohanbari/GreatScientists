@@ -4,5 +4,35 @@
     "name": "Nikola Tesla",
     "description": "Nikola Tesla was a Serbian-American inventor, electrical engineer, mechanical engineer, and futurist best known for his contributions to the design of the modern alternating current electricity supply system.",
     "wikiUrl": "https://en.wikipedia.org/wiki/Nikola_Tesla"
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Marie_Curie_c._1920s.jpg",
+    "name": "Marie Curie",
+    "description": "Marie Salomea Skłodowska Curie was a Polish and naturalized-French physicist and chemist who conducted pioneering research on radioactivity.",
+    "wikiUrl": "https://en.wikipedia.org/wiki/Marie_Curie"
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Einstein_1921_by_F_Schmutzer_-_restoration.jpg/330px-Einstein_1921_by_F_Schmutzer_-_restoration.jpg",
+    "name": "Albert Einstein",
+    "description": "Albert Einstein was a German-born theoretical physicist, widely acknowledged to be one of the greatest physicists of all time. Einstein is best known for developing the theory of relativity, but he also made important contributions to the development of the theory of quantum mechanics.",
+    "wikiUrl": "https://en.wikipedia.org/wiki/Albert_Einstein"
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Portrait_of_Sir_Isaac_Newton%2C_1689.jpg",
+    "name": "Isaac Newton",
+    "description": "Sir Isaac Newton PRS was an English mathematician, physicist, astronomer, alchemist, theologian, and author widely recognised as one of the greatest mathematicians and physicists of all time and among the most influential scientists.",
+    "wikiUrl": "https://en.wikipedia.org/wiki/Isaac_Newton"
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Charles_Darwin_seated_crop.jpg",
+    "name": "Charles Darwin",
+    "description": "Charles Robert Darwin FRS FRGS FLS FZS was an English naturalist, geologist and biologist, best known for his contributions to evolutionary biology. His proposition that all species of life have descended from common ancestors is now widely accepted and considered a fundamental concept in science.",
+    "wikiUrl": "https://en.wikipedia.org/wiki/Charles_Darwin"
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Justus_Sustermans_-_Portrait_of_Galileo_Galilei%2C_1636.jpg",
+    "name": "Galileo Galilei",
+    "description": "Galileo di Vincenzo Bonaiuti de' Galilei, commonly referred to as Galileo, was an astronomer, physicist and engineer, sometimes described as a polymath, from Pisa, in modern-day Italy. Galileo has been called the \"father\" of observational astronomy, modern physics, the scientific method, and modern science.",
+    "wikiUrl": "https://en.wikipedia.org/wiki/Galileo_Galilei"
   }
 ]

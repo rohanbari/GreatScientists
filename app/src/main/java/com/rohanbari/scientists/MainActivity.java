@@ -12,7 +12,6 @@ import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
@@ -29,20 +28,33 @@ public class MainActivity extends AppCompatActivity {
         binding.listView.setAdapter(adapter);
 
         Gson gson = new Gson();
-        String json = null;
+
+        Scientist[] scientistList = gson.fromJson(readAsset("scientists.json"),
+                Scientist[].class);
+        adapter.addScientists(new ArrayList<>(Arrays.asList(scientistList)));
+
+        binding.listView.setAdapter(adapter);
+    }
+
+    private String readAsset(final String fileName) {
+        String json = "";
+
         try {
-            InputStream input = getAssets().open("scientists.json");
+            InputStream input = getAssets().open(fileName);
             int size = input.available();
             byte[] bytes = new byte[size];
-            input.read(bytes);
+
+            if (-1 == input.read(bytes))
+                System.err.println("Error while reading the JSON asset file.");
+
             input.close();
+
             json = new String(bytes, StandardCharsets.UTF_8);
-            Scientist[] scientistList = gson.fromJson(json, Scientist[].class);
-            adapter.addScientists(new ArrayList<>(Arrays.asList(scientistList)));
+
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        binding.listView.setAdapter(adapter);
+        return json;
     }
 }
